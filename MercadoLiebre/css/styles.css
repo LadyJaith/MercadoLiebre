@@ -1,12 +1,15 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
 
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
+
 
 h3{
     font-size: 24px;
@@ -14,16 +17,14 @@ h3{
 
 p{
     font-size: 12px;
-    position: relative;
-    left: 60px;
+   
     
     
 }
 div.top-header{
     padding: 5%;
-    display:flex;
-    justify-content:space-between;
-
+   
+    
 }
 
 header{
@@ -32,13 +33,13 @@ header{
 
 header div.logo{
     width: 50%;
-}
-
-header div.logo{
     padding: 10px;
 }
+
 header nav{
     font-size: 12px;
+    display: none;
+    
 }
 
 header ul li{
@@ -49,35 +50,37 @@ header ul li a{
     text-decoration: none;
     color: #000;
 }
-
 header .form .input{
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
-    width: 300px;
-
+    width: 60%;
+    display: flex;
+   
 }
 header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
-    width: 19%;
+    width: 5%;
+    font-weight: normal;
+}
+header .form .submit,
+header .form .input{
+    display: inline;
 
 }
-
 
 header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
-
 div.burger-menu{
     text-align: center;
 }
-
 div.burger-menu i{
     background-color: #0044AA;
     border-radius: 5px;
@@ -88,66 +91,52 @@ div.burger-menu i{
     padding: 10px;
     width: 40px;
 }
-
-
 main section p{
     display: inline;
 }
-
 main section .price{
     font-size: 18px;
     flex: 30%;
     padding: 10px;
 }
-
-
 main section .discount{
     font-size: 18px;
     flex: 70%;
     padding: 10px;
 }
-
 .products{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     flex-direction: column;
+    width: 100%;
 }
-
-
 h3,
 .description{
     color: #666;
 }
-
 .description{
-    display:flexbox;
+    display:none;
     margin-top: 20px;
 }
-
 section.banner img{
     width: 100%;
 }
-
 main{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
-
 main section article{
     background-color: #fff;    
     margin: 10px 0px;
     
 }
-
 main section article img{
     width: 100%;
 }
-
 main section article i,
 .discount{
     color: #39b54a;
 }
-
 main section article i{
     font-size: 16px;
     padding: 5px;
@@ -160,44 +149,34 @@ main section article i{
     right: -70%;
     top: -40px;
 }
-
 main section article i{
     position:relative;
 }
-
 main section h3{
     margin: 20px 0px;
 }
-
 article div.main-article{
     width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
-
-
 .navegador {
     display: flex;
     align-items:flex-end;
     justify-content: space-between;
     font-weight: bold;
 }
-
-
 ul li{
     display: inline-block;
     padding: 0px 20px;
 }
-
 a{
     color: #FFF;
     text-decoration: none;
 }
-
 a:hover{
     color: aqua;
 }
-
 .navegador2{
     display: flex;
     align-items: flex-start;
@@ -205,28 +184,24 @@ a:hover{
     
     font-weight: bold;
 }
-
 nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-
 footer{
     background-color: #EAC926;
     display: flex;
     padding: 100px;
     margin-top: 5%;
     justify-content: space-between;
-    width: 84%;
+    width: 100%;
 }
-
 footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .footer-item {
     width: 20%; 
     margin-bottom: 20px; 
@@ -234,17 +209,44 @@ footer {
     font-style: italic;
 }
 
+main .metInformacion{
+    text-align: center;
+    background-color: #FFF;
+    padding: 1px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+main .metInformacion h4{
+    font-size: 15px;
+   
+}
+
+main .metInformacion i{
+    color: #0044AA;
+    width: 50%;
+    margin: 10px;
+
+}
 
 
 
 
 
+
+
+/*tablets*/
 
 @media (min-width: 768px){
+    header nav{
+        display: flex;
+        font-size: 12px;
+        margin-left: 5px;
+        
+    }
     main section article .description{
         display: block;
     }
-
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     } 
@@ -253,10 +255,32 @@ footer {
         justify-content: space-between;
         flex-direction: row;
        
+       
+    }
+    main .metInformacion{
+        display: flex;
+        justify-content: center;
+    }
+
+    main .metInformacion i{
+        margin-top: 20px;
+        text-align: center;
     }
 }
 
-@media (min-width: 600px){
-    
+
+
+/*phones*/
+@media (min-width: 576px){
+   
+      
+   
+   
+}
+
+
+
+/*desktop*/
+@media (min-width: 992px){
 
 }
